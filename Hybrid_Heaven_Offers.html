@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hybrid Heaven | Exciting Offers Coming Soon</title>
+    <link rel="stylesheet" href="project_styles_main.css">
+    <script src="project_script_main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="icon" href="project_images/logo-icon.png">
+    <script src="search.js"></script>
+    <style>
+        .coming-soon-background {
+            background: linear-gradient(rgba(2, 12, 12, 0.7), rgba(8, 4, 2, 0.7)), url('project_images/offer_background.jpg');
+            background-size: cover;
+            background-position: center;
+            height: 60vh;
+            display: flex;
+            align-items: center;
+            text-align: center;
+            color: white;
+        }
+        .coming-soon-card {
+            background: rgba(255, 255, 255, 0.9);
+            border-radius: 15px;
+            padding: 30px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            max-width: 800px;
+            margin: -50px auto 50px;
+            position: relative;
+        }
+        .countdown {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            margin: 25px 0;
+        }
+        .countdown-item {
+            background: #28a745;
+            color: white;
+            border-radius: 10px;
+            padding: 15px 10px;
+            min-width: 80px;
+            text-align: center;
+        }
+        .countdown-number {
+            font-size: 2rem;
+            font-weight: bold;
+        }
+        .countdown-label {
+            font-size: 0.8rem;
+            text-transform: uppercase;
+        }
+        .offer-teaser {
+            background: #f8f9fa;
+            border-left: 4px solid #28a745;
+            padding: 15px;
+            margin: 20px 0;
+            border-radius: 0 8px 8px 0;
+        }
+        .notify-form {
+            max-width: 500px;
+            margin: 0 auto;
+        }
+    </style>
+</head>
+<body class="body">
+    <section class="grid">
+        <div>
+            <a href="Hybrid_Heaven.html"><img class="logo" alt="logo" src="project_images/logo.png" height="80px" width="120px"></a>
+        </div>
+        <div>
+            <nav class="navbar" id="navbar">
+                <ul class="nav-links">
+                    <li><a href="Hybrid_Heaven_Home.html">Home</a></li>
+                    <li><a href="Hybrid_Heaven_Plants.html">Plants</a></li>
+                    <li><a href="Hybrid_Heaven_Orders.html">Orders</a></li>
+                    <li><a href="Hybrid_Heaven.html">About </a></li>
+                    <li><a href="Hybrid_Heaven_Contact.html">Contact</a></li>
+                    <li><a href="Hybrid_Heaven_Feedback.html">Feedback</a></li>
+                </ul>
+            </nav>
+        </div>
+       
+        <div class="search-container">
+            <form style="display: flex; align-items: center;" action="search_table_values.php" method="post">
+              <input type="text" id="search-bar" name="search_name" placeholder="Search something you want" style="flex: 1; padding: 15px;">
+              <button id="search-btn" type="submit" style="padding: 15px 12px;">🔍</button>
+            </form>
+        </div>
+
+        <div>
+            <a href="login.html" class="login-icon"><i class="fas fa-user"></i></a>
+            <a href="cart.html" class="cart-icon">🛒</a>
+        </div>
+    </section>
+    
+    <span class="sol"><marquee behavior="alternate" direction="left" scrollamount="12" style="color: green; font-size: 18px; font-weight: bold;">
+        <img src="project_images/logo-icon.png" height="30px" width="30px"> &nbsp;BIG OFFERS COMING SOON! Get notified when our special deals launch 🌱
+    </marquee></span>
+    
+    <div class="topicons">
+        <div class="topicons_item">
+            <a href="Hybrid_Heaven_Combos.html"><img src="project_images/combosicon.jpeg" alt="Combos"></a>
+            <div class="caption">Combos</div>
+        </div>
+        <div class="topicons_item">
+            <a href="Hybrid_Heaven_Plants.html"><img src="project_images/plantsicon.jpeg" alt="Plants"></a>
+            <div class="caption">Plants</div>
+        </div>
+        <div class="topicons_item">
+            <a href="Hybrid_Heaven_Grafted.html"><img src="project_images/graftedicon.jpeg" alt="Grafted"></a>
+            <div class="caption">Grafted</div>
+        </div>
+        <div class="topicons_item">
+            <a href="Hybrid_Heaven_Seeds.html"><img src="project_images/seedsicon.jpeg" alt="Seeds"></a>
+            <div class="caption">Seeds</div>
+        </div>
+        <div class="topicons_item">
+            <a href="Hybrid_Heaven_Fertilizers.html"><img src="project_images/fertilizersicon.jpeg" alt="Fertilizers"></a>
+            <div class="caption">Fertilizers</div>
+        </div>
+        <div class="topicons_item">
+            <a href="Hybrid_Heaven_Accessories.html"><img src="project_images/accessoriesicon.jpeg" alt="Accessories"></a>
+            <div class="caption">Accessories</div>
+        </div>
+        <div class="topicons_item">
+            <a href="Hybrid_Heaven_Pots.html"><img src="project_images/potsicon.jpeg" alt="Pots"></a>
+            <div class="caption">Pots</div>
+        </div>
+        <div class="topicons_item">
+            <a href="Hybrid_Heaven_Offers.html"><img src="project_images/offericon.jpg" alt="Offers"></a>
+            <div class="caption">Offers</div>
+        </div>
+    </div>
+
+    <button onclick="scrollToTop()" id="goTopBtn" title="Go to top">↑TOP</button>
+    
+    <pre style="font-family:Cambria;font-weight:bold;">
+        <a style="color:rgb(189, 90, 24);font-size:24px;text-decoration:none;" href="Hybrid_Heaven_Home.html">Home</a>   >  <a style="color:black;font-size:19px;text-decoration:none;" href="Hybrid_Heaven_Offers.html"> Offers</a>
+    </pre>
+
+    <div class="coming-soon-background">
+        <div class="hero-content w-100">
+            <h1><span style="color:white;">EXCITING OFFERS COMING SOON!</span></h1>
+            <p><span style="color:#ffcc00;">We're preparing something special for you</span></p>
+        </div>
+    </div>
+<br><br><br><br>
+    <div class="coming-soon-card">
+        <h2 class="text-center mb-4" style="color: #28a745;">Our Biggest Sale of the Season Starts In:</h2>
+        
+        <div class="countdown">
+            <div class="countdown-item">
+                <div class="countdown-number" id="days">07</div>
+                <div class="countdown-label">Days</div>
+            </div>
+            <div class="countdown-item">
+                <div class="countdown-number" id="hours">12</div>
+                <div class="countdown-label">Hours</div>
+            </div>
+            <div class="countdown-item">
+                <div class="countdown-number" id="minutes">12</div>
+                <div class="countdown-label">Minutes</div>
+            </div>
+            <div class="countdown-item">
+                <div class="countdown-number" id="seconds">30</div>
+                <div class="countdown-label">Seconds</div>
+            </div>
+        </div>
+
+        <div class="offer-teaser">
+            <h4><i class="fas fa-seedling" style="color: #28a745;"></i> Sneak Peek at Upcoming Offers:</h4>
+            <ul>
+                <li>Up to 60% off on premium gardening tools</li>
+                <li>Buy 1 Get 1 free on select plant varieties</li>
+                <li>Exclusive combo deals on pots and plants</li>
+                <li>Special discounts for first-time buyers</li>
+                <li>Free gifts with purchases above ₹1999</li>
+            </ul>
+        </div>
+
+        <div class="text-center mt-4">
+            <h4>Get Early Access to These Deals!</h4>
+            <p>Be the first to know when these offers go live</p>
+            
+            <form class="notify-form" action="notify_table_values.php" method="post">
+                <div class="input-group mb-3">
+                    <input type="email" class="form-control" name="notifyemail" placeholder="Enter your email address" required>
+                    <button class="btn btn-success" type="submit" onclick="alert('We will notify you when our special offers launch!')">Notify Me</button>
+                </div>
+                <small class="text-muted">We'll send you a reminder when the offers are available</small>
+            </form>
+        </div>
+    </div>
+
+    <div class="whatsapp-label-container" id="whatsapp-label">
+        <span>Chat with us</span>
+        <button onclick="document.getElementById('whatsapp-label').style.display='none'">✕</button>
+    </div>
+    <a href="https://wa.me/919505736713" class="whatsapp-float" target="_blank" title="Chat with us on WhatsApp">
+        <img src="https://img.icons8.com/color/60/000000/whatsapp--v1.png" alt="WhatsApp Chat">
+    </a>
+
+    <div id="abt"  style="background-color:rgba(179, 236, 238, 0.849);margin:30px;padding:40px;">
+        <h3 style="font-weight:bold;font-family:'Courier New', Courier, monospace;text-align:center;color:#2a8b24c5;">About Hybrid Heaven</h3>
+    <p style="text-align:center;margin:20px;font-size:20px;">Hybrid Heaven is more than just a plant nursery — it's a sanctuary for plant lovers and a celebration of nature's finest creations. Founded with a deep passion for greenery and sustainable living, Hybrid Heaven offers a unique collection of rare, hybrid, and exotic plants carefully nurtured to thrive in diverse environments.<p style="text-align:center;margin:20px;font-size:20px;"> Our mission is to bring nature closer to homes and hearts by making plant care easy, enjoyable, and deeply rewarding. Whether you're looking to start your plant journey or expand your green space, Hybrid Heaven is your trusted destination for quality plants, expert guidance, and a peaceful, eco-conscious experience.</p> <p style="text-align:center;margin:20px;font-size:20px;">Every plant here is grown with love, and every customer becomes part of our growing green family.</p></p>
+    </div>
+
+    <div style="background-color:white;"><br>
+        <section class="aboutus">
+            <div style="text-align:center;">
+                <h2 style="text-align:center;"><b>Useful Links</b></h2><br>
+                    <a href="Hybrid_Heaven_Track_Order.html">Track Order</a><br>
+                    <a href="Hybrid_Heaven_Orders.html">Orders</a><br>
+                    <a href="Hybrid_Heaven_Faqs.html">FAQ's</a><br>
+                    <a href="Hybrid_Heaven_Offers.html">Offers</a><br>
+                    <a href="Hybrid_Heaven_Rewards.html">Rewards</a><br>
+                    <a href="Hybrid_Heaven_Affiliate.html">Affiliate</a><br>
+            </div>
+            <div style="text-align:center;">
+                <h2 style="text-align:center;"><b>About</b></h2><br>
+                    <a href="Hybrid_Heaven.html">About Hybrid Heaven</a><br>
+                    <a href="Hybrid_Heaven_Privacy_Policy.html">Privacy Policy</a><br>
+                    <a href="Hybrid_Heaven_Refund_Policy.html">Refund Policy</a><br>
+                    <a href="Hybrid_Heaven_Shipping_Policy.html">Shipping Policy</a><br>
+                    <a href="Hybrid_Heaven_Terms_Of_Service.html">Terms of Service</a><br>
+                    <a href="Hybrid_Heaven_Jobs.html">Jobs</a><br>
+            </div>
+            <div style="text-align:center;">
+                <h2 style="text-align:center;"><b>Follow Us</b></h2><br>
+                    <a href="https://x.com/HybridHeavenOff?t=PNUJ0olnoD7j8Kqmx85_GQ&s=09" target="_blank"><img src="project_images/twittericon.png" width="40px" height="37px" style="border-radius:30px;"></a>
+                    <a href="https://www.instagram.com/hybridheavenofficial/?utm_source=ig_web_button_share_sheet" target="_blank"><img src="project_images/instaicon.png" width="35px" height="33px" style="border-radius:30px;"></a>
+                    <a href="https://www.youtube.com/channel/UCyuXTJPqFJkzAVaPV4Wy-dw" target="_blank"><img src="project_images/yticon.png" width="35px" height="33px" style="border-radius:30px;"></a>
+                    <a href="https://www.facebook.com/profile.php?id=61575038390477"target="_blank"><img src="project_images/fbicon2.png" width="35px" height="33px" style="border-radius:30px;"></a>
+                    <a href="https://www.linkedin.com/in/hybrid-heaven-877483359/" target="_blank"><img src="project_images/linkdinicon.png" width="40px" height="37px" style="border-radius:30px;"></a>
+            </div>
+            <div>
+                <h2>Get in Touch</h2><br>
+                <a href="#">Call: +91 9505736713</a><br>
+                <a href="https://wa.me/919505736713">WhatsApp:   +91 9505736713</a><br>
+                <a href="https://wa.me/919505736713" target="_blank">For Bulk Orders (WhatsApp):<br>+91 9505736713</a><br>
+                Email:<br><a href="mailto:hybridheavenofficial25@gmail.com" target="_blank">hybridheavenofficial25@gmail.com</a>
+                <p>Address:<br> 3-81/1, Near Panchayati, Chinakakani, Mangalagiri, Guntur, Andhra Pradesh. India-522503</p>
+            </div>
+            <div class="signup" style="text-align:center;">
+                <h2><b>Subscribe</b></h2><br>
+                <p>Join us to recieve gardening tips,offers,news & more..</p>
+                <form action="subscribe_table_values.php" method="post">
+                <input type="email" id="emai" placeholder="Enter email address" id="subss" name="subscribeemail" style="padding:10px;width:280px;" required>
+                <span id="emailError" class="error"></span><br><hr>
+                <button style="padding:5px;color:rgba(32, 27, 23, 0.904);background-color:#93d88ec9" id="subss" onclick="Subscribe()"><b>Sign up</b></button>
+                </form>
+            </div>
+            
+        </section>
+        <footer align="center" style="color:#3d3c3c;background-color:rgb(150, 150, 153);padding:3px;">
+            <p><h6>&copy; 2025 <a href="Hybrid_Heaven.html" style="text-decoration:none;color:#3d3c3c;">Hybrid Heaven</a> | All Rights Reserved</h6></p>
+        </footer></div>
+    
+
+    <script>
+        // Set a fixed launch date: 7 days from the first load
+        const now = new Date();
+        const launchDate = new Date(now.getTime() + 7* 24 * 60 * 60 * 1000); // 7 days from now
+        
+        function updateCountdown() {
+            const currentTime = new Date();
+            const diff = launchDate - currentTime;
+        
+            if (diff <= 0) {
+                document.getElementById('days').textContent = '00';
+                document.getElementById('hours').textContent = '00';
+                document.getElementById('minutes').textContent = '00';
+                document.getElementById('seconds').textContent = '00';
+                return;
+            }
+        
+            const days = Math.floor(diff / (1000 * 60 * 60 * 24));
+            const hours = Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            const minutes = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
+            const seconds = Math.floor((diff % (1000 * 60)) / 1000);
+        
+            document.getElementById('days').textContent = days.toString().padStart(2, '0');
+            document.getElementById('hours').textContent = hours.toString().padStart(2, '0');
+            document.getElementById('minutes').textContent = minutes.toString().padStart(2, '0');
+            document.getElementById('seconds').textContent = seconds.toString().padStart(2, '0');
+        }
+        
+        setInterval(updateCountdown, 1000);
+        updateCountdown();
+        
+        function Subscribe(){
+            alert("We'll contact you soon!! Thanks for Patience!!");
+        }
+        </script>
+        
+</body>
+</html>

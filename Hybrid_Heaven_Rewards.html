@@ -1,0 +1,516 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hybrid Heaven | Home</title>
+    <link rel="stylesheet" href="project_styles_main.css">
+    <script src="project_script_main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="icon"  href="project_images/logo-icon.png">
+    <link rel="stylesheet"  href="home_page_offers.css">
+    <link rel="stylesheet" href="Hybrid_Heaven_Plants.css">
+    <script src="search.js"></script>
+    <style>
+        /* Coupon Popup Styles */
+.coupon-popup {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #f8f9fa;
+    border: 3px dashed #28a745;
+    border-radius: 15px;
+    padding: 25px;
+    width: 350px;
+    max-width: 90%;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+    z-index: 1000;
+    text-align: center;
+    animation: fadeIn 0.5s;
+}
+
+.coupon-popup h3 {
+    color: #28a745;
+    margin-bottom: 15px;
+}
+
+.coupon-code {
+    background-color: #fff;
+    border: 2px solid #28a745;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 22px;
+    font-weight: bold;
+    color: #28a745;
+    margin: 15px 0;
+    display: inline-block;
+}
+
+.coupon-popup p {
+    margin-bottom: 15px;
+    color: #333;
+}
+
+.close-popup {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 24px;
+    color: #888;
+    cursor: pointer;
+    background: none;
+    border: none;
+}
+
+.close-popup:hover {
+    color: #555;
+}
+
+@keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+.popup-overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.5);
+    z-index: 999;
+}
+    </style>
+
+</head>
+<body class="body" >
+    <section class="grid">
+        <div>
+            <a href="Hybrid_Heaven.html"><img class="logo"alt="logo" src="project_images/logo.png" height="80px" width="120px"></a>
+        </div>
+        <div>
+            
+            
+            <nav class="navbar" id="navbar">
+                <ul class="nav-links">
+                    <li><a href="Hybrid_Heaven_Home.html">Home</a></li>
+                    <li><a href="Hybrid_Heaven_Plants.html">Plants</a></li>
+                    <li><a href="Hybrid_Heaven_Orders.html">Ordes</a></li>
+                    <li><a href="Hybrid_Heaven.html">About Us</a></li>
+                    <li><a href="Hybrid_Heaven_Contact.html">Contact</a></li>
+                    <li><a href="Hybrid_Heaven_Feedback.html">Feedback</a></li>
+                </ul>
+            </nav>
+
+
+        </div>
+       
+       
+       
+        <div class="search-container">
+            <form style="display: flex; align-items: center;" action="search_table_values.php" method="post">
+              <input type="text" id="search-bar" name="search_name" placeholder="Search something you want" style="flex: 1; padding: 15px;">
+              <button id="search-btn" type="submit" style="padding: 15px 12px;">🔍</button>
+            </form>
+        </div>
+
+
+
+        <div>
+        <a href="login.html" class="login-icon"><i class="fas fa-user"></i></a>
+        <a href="cart.html" class="cart-icon">🛒</a>
+        </div>
+
+
+    </section>
+    
+    
+    <span class="sol"><marquee behavior="alternate" direction="left" scrollamount="12" style="color: green; font-size: 18px; font-weight: bold;"><img src="project_images/logo-icon.png" height="30px" width="30px" > &nbsp;FLASH SALE! Get <span style="color:rgb(196, 92, 7);">20% OFF </span>on all plants! Use code: <span style="color:rgb(196, 92, 7);">GREEN20</span> at checkout. Hurry, limited time only! 🏃‍♂️</marquee></span>
+    
+    
+    <p style="margin-top:10px;"></p>
+
+
+    <div class="topicons">
+
+        <div class="topicons_item">
+            <a href="Hybrid_Heaven_Combos.html"><img src="project_images/combosicon.jpeg" alt="Combos"></a>
+            <div class="caption">Combos</div>
+        </div>
+
+        <div class="topicons_item">
+            <a href="Hybrid_Heaven_Plants.html"><img src="project_images/plantsicon.jpeg" alt="Plants"></a>
+            <div class="caption">Plants</div>
+        </div>
+
+        <div class="topicons_item">
+            <a href="Hybrid_Heaven_Grafted.html"><img src="project_images/graftedicon.jpeg" alt="Grafted"></a>
+            <div class="caption">Grafted</div>
+        </div>
+
+        <div class="topicons_item">
+            <a href="Hybrid_Heaven_Seeds.html"><img src="project_images/seedsicon.jpeg" alt="Seeds"></a>
+            <div class="caption">Seeds</div>
+        </div>
+        
+        <div class="topicons_item">
+            <a href="Hybrid_Heaven_Fertilizers.html"><img src="project_images/fertilizersicon.jpeg" alt="Fertilizers"></a>
+            <div class="caption">Fertilizers</div>
+        </div>
+
+        <div class="topicons_item">
+            <a href="Hybrid_Heaven_Accessories.html"><img src="project_images/accessoriesicon.jpeg" alt="Accessories"></a>
+            <div class="caption">Accessories</div>
+        </div>
+
+        <div class="topicons_item">
+            <a href="Hybrid_Heaven_Pots.html"><img src="project_images/potsicon.jpeg" alt="Pots"></a>
+            <div class="caption">Pots</div>
+        </div>
+        
+        <div class="topicons_item">
+            <a href="Hybrid_Heaven_Offers.html"><img src="project_images/offericon.jpg" alt="Offers"></a>
+            <div class="caption">Offers</div>
+        </div>
+
+    </div>
+
+<div class="whatsapp-label-container" id="whatsapp-label">
+    <span>Chat with us</span>
+    <button onclick="document.getElementById('whatsapp-label').style.display='none'">✕</button>
+  </div>
+  
+  <a href="https://wa.me/919505736713" class="whatsapp-float" target="_blank" title="Chat with us on WhatsApp">
+    <img src="project_images/whatsappicon.jpg" alt="WhatsApp Chat">
+  </a>
+  
+
+    <div>
+
+        <div class="carousel" id="carouselExample" class="carousel slide" data-bs-ride="carousel">
+            
+            <div class="carousel-inner">
+                
+                <div class="carousel-item ">
+                    <a href="Hybrid_Heaven_Plants.html" target="_self"><img src="project_images/topcaro_1.jpg" class="d-block w-100" alt="Slide 1" width="100px" height="500px" usemap="caro_1"></a>
+                </div>
+                
+                <div class="carousel-item active">
+                    <a href="Hybrid_Heaven_Plants.html" target="_self"><img src="project_images/topcaro_2.jpg" class="d-block w-100" alt="Slide 2" width="100px" height="500px"></a>
+                </div>
+                
+                <div class="carousel-item ">
+                    <a href="Hybrid_Heaven_Offers.html" target="_self"><img src="project_images/topcaro_3.jpg" class="d-block w-100" alt="Slide 3" width="100px" height="500px"></a>
+                </div>
+
+            </div>
+        
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev" >
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            </button>
+
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            </button>
+        
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="0" class="active"></button>
+                <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="1"></button>
+                <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="2"></button>
+            </div>
+        </div>
+    </div>
+
+<div id="bbbb"><br>
+    <div class="Weekoffer" >
+        <h2>
+            SUMMER SALES
+        </h2>
+
+        <div class="weekoffergrid">
+            
+            <div>
+                <a href="Mango(Banganapalle)-Grafted.html" class="abc"><img class="a1" src="project_images/Mango(Banganapalle)-Grafted.jpg" alt="weekly-1" width="292px" height="280px" ><br>
+                <p class="span1">Mango(Banganapalle)-Grafted</p></a>
+                <span class="span2"><img src="project_images/star1_icon.jpg" alt="4.5 star rating" width="120px" height="25px"></span><br>
+                <p class="span3">₹299 &nbsp;&nbsp;&nbsp;<span style="color:rgba(236, 109, 25, 0.747);text-decoration:line-through">₹699</span></p>
+            </div>
+
+            <div>
+                <a href="Water_Melon(Puchakaya).html" class="abc"><img class="a1" src="project_images/watermelon.webp" alt="weekly-1" width="292px" height="280px" ><br>
+                <p class="span1">Water Melon(Puchakaya)</p></a>
+                <span class="span2"><img src="project_images/star2_icon.jpg" alt="4 star rating" width="120px" height="25px"></span><br>
+                <p class="span3">₹299 &nbsp;&nbsp;&nbsp;<span style="color:rgba(236, 109, 25, 0.747);text-decoration:line-through">₹399</span></p>
+            </div>
+
+            <div>
+                <a href="Coconut(Kobbarikaya).html" class="abc"><img class="a1" src="project_images/Coconut.webp" alt="weekly-1" width="292px" height="280px" ><br>
+                <p class="span1">Coconut(Kobbarikaya)</p></a>
+                <span class="span2"><img src="project_images/star2_icon.jpg" alt="4 star rating" width="120px" height="25px"></span><br>
+                <p class="span3">₹299 &nbsp;&nbsp;&nbsp;<span style="color:rgba(236, 109, 25, 0.747);text-decoration:line-through">₹499</span></p>
+            </div>
+
+            <div>
+                <a href="WaterApple.html" class="abc"><img class="a1" src="project_images/Water_Apple.jpg" alt="weekly-1" width="292px" height="280px" ><br>
+                <p class="span1">Water Apple(Gulaab Jamm Kaya)</p></a>
+                <span class="span2"><img src="project_images/star1_icon.jpg" alt="4.5 star rating" width="120px" height="25px"></span><br>
+                <p class="span3">₹299 &nbsp;&nbsp;&nbsp;<span style="color:rgba(236, 109, 25, 0.747);text-decoration:line-through">₹399</span></p>
+            </div>
+            
+        </div>
+    </div>
+
+
+
+ <div class="topseller">
+        <h2>
+            TOP SELLERS
+        </h2>
+
+        <div class="topsellergrid">
+            
+            <div>
+                <a href="Mango(Banganapalle)-Grafted.html" class="abc"><img class="a1" src="project_images/Mango(Banganapalle)-Grafted.jpg" alt="weekly-1" width="292px" height="280px" ><br>
+                <p class="span1">Mango(Banganapalle)-Grafted</p></a>
+                <span class="span2"><img src="project_images/star_icon.png" alt="4.5 star rating" width="120px" height="25px"></span><br>
+                <p class="span3">₹299 &nbsp;&nbsp;&nbsp;<span style="color:rgba(236, 109, 25, 0.747);text-decoration:line-through">₹699</span></p>
+            </div>
+
+            <div>
+                <a href="Sapota(Kalapatti)-Grafted.html" class="abc"><img class="a1" src="project_images/Sapota(Kalapatti)-Grafted(V).jpg" alt="weekly-1" width="292px" height="280px" ><br>
+                <p class="span1">Sapota Plant(Kalapatti)</p></a>
+                <span class="span2"><img src="project_images/star_icon.png" alt="4.5 star rating" width="120px" height="25px"></span><br>
+                <p class="span3">₹249 &nbsp;&nbsp;&nbsp;<span style="color:rgba(236, 109, 25, 0.747);text-decoration:line-through">₹349</span></p>
+            </div>
+
+            <div>
+                <a href="Custard_Apple(Seetaphalam)-Grafted.html" class="abc"><img class="a1" src="project_images/Custard_Apple(Seetaphalam)-Grafted(V).jpg" alt="weekly-1" width="292px" height="280px" ><br>
+                <p class="span1">Custard Apple(Seetaphalam)-Grafted</p></a>
+                <span class="span2"><img src="project_images/star_icon.png" alt="4.5 star rating" width="120px" height="25px"></span><br>
+                <p class="span3">₹239 &nbsp;&nbsp;&nbsp;<span style="color:rgba(236, 109, 25, 0.747);text-decoration:line-through">₹399</span></p>
+            </div>
+            
+            <div>
+                <a href="Mulakkaya(Moringa oleifera).html" class="abc"><img class="a1" src="project_images/Mulakkaya(Moringa oleifera).jpg" alt="weekly-1" width="292px" height="280px" ><br>
+                <p class="span1">Mulakkaya(Moringa oleifera)</p></a>
+                <span class="span2"><img src="project_images/star_icon.png" alt="4.5 star rating" width="120px" height="25px"></span><br>
+                <p class="span3">₹219 &nbsp;&nbsp;&nbsp;<span style="color:rgba(236, 109, 25, 0.747);text-decoration:line-through">₹299</span></p>
+            </div>
+            
+        </div>
+    </div>
+
+
+
+
+    
+    <div class="description">
+        <h3>🌿 Embrace the Beauty of Greenery</h3><br>
+        <pre>Enhance your living spaces—whether it's your home, office, or garden—with a stunning variety of premium plants, delivered to your door.
+
+At Hybrid Heaven, we provide an extensive range of both indoor and outdoor plants, including lush flowering species, low-maintenance
+succulents, fruit-bearing trees, and more. Whether you're a seasoned plant lover or just starting out, our user-friendly platform makes 
+it easy to find and purchase the perfect greenery for your space.
+            
+🌱 Shop Now & Bring Nature Closer!  
+
+    <a href="Hybrid_Heaven_Plants.html"  ><button class="shopplantss">Shop Now</button></a>        </pre>
+    </div>
+
+
+
+    <button onclick="scrollToTop()" id="goTopBtn" title="Go to top">↑TOP</button>
+
+
+
+
+
+
+    <div class="newarr">
+        <h2>
+            NEW ARRIVALS
+        </h2>
+
+        <div class="newarrgrid">
+            
+            <div>
+                <a href="Mango(Banganapalle)-Grafted.html" class="abc"><img class="a1" src="project_images/Mango(Banganapalle)-Grafted.jpg" alt="weekly-1" width="292px" height="280px" ><br>
+                <p class="span1">Mango(Banganapalle)-Grafted</p></a>
+                <span class="span2"><img src="project_images/star1_icon.jpg" alt="4.5 star rating" width="120px" height="25px"></span><br>
+                <p class="span3">₹299 &nbsp;&nbsp;&nbsp;<span style="color:rgba(236, 109, 25, 0.747);text-decoration:line-through">₹699</span></p>
+            </div>
+
+            <div>
+                <a href="Mango(Rasam)-Grafted.html" class="abc"><img class="a1" src="project_images/Mango(Rasam)-Grafted(V).jpg" alt="weekly-1" width="292px" height="280px" ><br>
+                <p class="span1">Mango(Rasam)-Grafted</p></a>
+                <span class="span2"><img src="project_images/star_icon.png" alt="4.5 star rating" width="120px" height="25px"></span><br>
+                <p class="span3">₹339 &nbsp;&nbsp;&nbsp;<span style="color:rgba(236, 109, 25, 0.747);text-decoration:line-through">₹799</span></p>
+            </div>
+
+            <div>
+                <a href="Nuru_Varahalu_Pink(Cainiksara).html" class="abc"><img class="a1" src="project_images/Nuru_Varahalu_Pink(Cainiksara)(V).jpg" alt="weekly-1" width="292px" height="280px" ><br>
+                <p class="span1">Nuru Varahalu Pink (Cainiksara)</p></a>
+                <span class="span2"><img src="project_images/star1_icon.jpg" alt="4.5 star rating" width="120px" height="25px"></span><br>
+                <p class="span3">₹199 &nbsp;&nbsp;&nbsp;<span style="color:rgba(236, 109, 25, 0.747);text-decoration:line-through">₹249</span></p>
+            </div>
+            
+            <div>
+                <a href="Ranapala(Bryophyllum).html" class="abc"><img class="a1" src="project_images/Ranapala(Bryophyllum)(V).jpg" alt="weekly-1" width="292px" height="280px" ><br>
+                <p class="span1">Ranapala(Bryophyllum)</p></a>
+                <span class="span2"><img src="project_images/star2_icon.jpg" alt="4.5 star rating" width="120px" height="25px"></span><br>
+                <p class="span3">₹99 &nbsp;&nbsp;&nbsp;<span style="color:rgba(236, 109, 25, 0.747);text-decoration:line-through">₹199</span></p>
+            </div>
+            
+        </div>
+    </div><br></div>
+
+
+
+    <h2 style="text-align:center;color:rgba(0, 128, 0, 0.822);font-family:Verdana;"><b>What Our Customers Say</b>
+    </h2>
+    <div id="customerCarousel" class="carousel slide">  
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <div class="row">
+                    <div class="col-md-4 testimonial">
+                        <img src="project_images/customer5.jpg" alt="Customer 1">
+                        <p>"Love the unique pots and planters!" - ⭐⭐⭐⭐</p>
+                        <h5>- Ritheesh Vemuri</h5>
+                    </div>
+                    
+                    <div class="col-md-4 testimonial">
+                        <img src="project_images/customer2.jpg" alt="Customer 2">
+                        <p>"Very healthy plants and fast delivery!" - ⭐⭐⭐⭐⭐</p>
+                        <h5>- Jaji Koneru</h5>
+                    </div>
+                    <div class="col-md-4 testimonial">
+                        <img src="project_images/customer3.jpg" alt="Customer 3">
+                        <p>"Excellent customer service and great selection!" - ⭐⭐⭐⭐</p>
+                        <h5>- Pranathi Lanka</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="row">
+                    <div class="col-md-4 testimonial">
+                        <img src="project_images/customer4.jpg" alt="Customer 4">
+                        <p>"Beautiful collection of plants!" - ⭐⭐⭐⭐⭐</p>
+                        <h5>- Anushka Krapa</h5>
+                    </div>
+                    <div class="col-md-4 testimonial">
+                        <img src="project_images/customer1.jpg" alt="Customer 5">
+                        <p>"Amazing plants! Highly recommended!" - ⭐⭐⭐⭐</p>
+                        <h5>- Nithin Raj</h5>
+                    </div>
+                    <div class="col-md-4 testimonial">
+                        <img src="project_images/customer6.jpg" alt="Customer 6">
+                        <p>"Quick delivery and well-packaged plants!" - ⭐⭐⭐⭐⭐</p>
+                        <h5>- Baby Jammula</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#customerCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#customerCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon"></span>
+        </button>
+    </div>
+
+    <br>
+    <div id="abt"  style="background-color:rgba(179, 236, 238, 0.849);margin:30px;padding:40px;">
+        <h3 style="font-weight:bold;font-family:'Courier New', Courier, monospace;text-align:center;color:#2a8b24c5;">About Hybrid Heaven</h3>
+    <p style="text-align:center;margin:20px;font-size:20px;">Hybrid Heaven is more than just a plant nursery — it's a sanctuary for plant lovers and a celebration of nature's finest creations. Founded with a deep passion for greenery and sustainable living, Hybrid Heaven offers a unique collection of rare, hybrid, and exotic plants carefully nurtured to thrive in diverse environments.<p style="text-align:center;margin:20px;font-size:20px;"> Our mission is to bring nature closer to homes and hearts by making plant care easy, enjoyable, and deeply rewarding. Whether you're looking to start your plant journey or expand your green space, Hybrid Heaven is your trusted destination for quality plants, expert guidance, and a peaceful, eco-conscious experience.</p> <p style="text-align:center;margin:20px;font-size:20px;">Every plant here is grown with love, and every customer becomes part of our growing green family.</p></p>
+    </div>
+<div style="background-color:white;"><br>
+    <section class="aboutus">
+        <div style="text-align:center;">
+            <h2 style="text-align:center;"><b>Useful Links</b></h2><br>
+                <a href="Hybrid_Heaven_Track_Order.html">Track Order</a><br>
+                <a href="Hybrid_Heaven_Orders.html">Orders</a><br>
+                <a href="Hybrid_Heaven_Faqs.html">FAQ's</a><br>
+                <a href="Hybrid_Heaven_Offers.html">Offers</a><br>
+                <a href="Hybrid_Heaven_Rewards.html">Rewards</a><br>
+                <a href="Hybrid_Heaven_Affiliate.html">Affiliate</a><br>
+        </div>
+        <div style="text-align:center;">
+            <h2 style="text-align:center;"><b>About</b></h2><br>
+                <a href="Hybrid_Heaven.html">About Hybrid Heaven</a><br>
+                <a href="Hybrid_Heaven_Privacy_Policy.html">Privacy Policy</a><br>
+                <a href="Hybrid_Heaven_Refund_Policy.html">Refund Policy</a><br>
+                <a href="Hybrid_Heaven_Shipping_Policy.html">Shipping Policy</a><br>
+                <a href="Hybrid_Heaven_Terms_Of_Service.html">Terms of Service</a><br>
+                <a href="Hybrid_Heaven_Jobs.html">Jobs</a><br>
+        </div>
+        <div style="text-align:center;">
+            <h2 style="text-align:center;"><b>Follow Us</b></h2><br>
+                <a href="https://x.com/HybridHeavenOff?t=PNUJ0olnoD7j8Kqmx85_GQ&s=09" target="_blank"><img src="project_images/twittericon.png" width="40px" height="37px" style="border-radius:30px;"></a>
+                <a href="https://www.instagram.com/hybridheavenofficial/?utm_source=ig_web_button_share_sheet" target="_blank"><img src="project_images/instaicon.png" width="35px" height="33px" style="border-radius:30px;"></a>
+                <a href="https://www.youtube.com/channel/UCyuXTJPqFJkzAVaPV4Wy-dw" target="_blank"><img src="project_images/yticon.png" width="35px" height="33px" style="border-radius:30px;"></a>
+                <a href="https://www.facebook.com/profile.php?id=61575038390477"target="_blank"><img src="project_images/fbicon2.png" width="35px" height="33px" style="border-radius:30px;"></a>
+                <a href="https://www.linkedin.com/in/hybrid-heaven-877483359/" target="_blank"><img src="project_images/linkdinicon.png" width="40px" height="37px" style="border-radius:30px;"></a>
+        </div>
+        <div>
+            <h2>Get in Touch</h2><br>
+            <a href="#">Call: +91 9505736713</a><br>
+            <a href="https://wa.me/919505736713">WhatsApp:   +91 9505736713</a><br>
+            <a href="https://wa.me/919505736713" target="_blank">For Bulk Orders (WhatsApp):<br>+91 9505736713</a><br>
+            Email:<br><a href="mailto:hybridheavenofficial25@gmail.com" target="_blank">hybridheavenofficial25@gmail.com</a>
+            <p>Address:<br> 3-81/1, Near Panchayati, Chinakakani, Mangalagiri, Guntur, Andhra Pradesh. India-522503</p>
+        </div>
+        <div class="signup" style="text-align:center;">
+            <h2><b>Subscribe</b></h2><br>
+            <p>Join us to recieve gardening tips,offers,news & more..</p>
+            <form action="subscribe_table_values.php" method="post">
+            <input type="email" id="email" placeholder="Enter email address" id="subss" name="subscribeemail" style="padding:10px;width:280px;" required>
+            <span id="emailError" class="error"></span><br><hr>
+            <button style="padding:5px;color:rgba(32, 27, 23, 0.904);background-color:#93d88ec9" id="subss" onclick="Subscribe()"><b>Sign up</b></button>
+            </form>
+        </div>
+        
+    </section>
+    <footer align="center" style="color:#3d3c3c;background-color:rgb(150, 150, 153);padding:3px;">
+        <p><h6>&copy; 2025 <a href="Hybrid_Heaven.html" style="text-decoration:none;color:#3d3c3c;">Hybrid Heaven</a> | All Rights Reserved</h6></p>
+    </footer></div>
+
+
+
+
+    <div class="popup-overlay" id="popupOverlay"></div>
+<div class="coupon-popup" id="couponPopup">
+    <button class="close-popup" onclick="closeCouponPopup()">×</button>
+    <h3>🎉 Special Offer Just For You! 🎉</h3>
+    <p>Get <strong>20% OFF</strong> on your first purchase!</p>
+    <div class="coupon-code">WELCOME20</div>
+    <p>Use this code at checkout to claim your discount.</p>
+    <p>Offer valid for first 100 customers only!</p>
+    <button onclick="closeCouponPopup()" style="background-color: #28a745; color: white; border: none; padding: 10px 20px; border-radius: 5px; cursor: pointer;">Claim Offer</button>
+</div>
+
+<script>
+    // Show popup when page loads
+window.onload = function() {
+    setTimeout(function() {
+        document.getElementById('popupOverlay').style.display = 'block';
+        document.getElementById('couponPopup').style.display = 'block';
+    }, 1000); // Show after 1 second
+};
+
+// Close popup function
+function closeCouponPopup() {
+    document.getElementById('popupOverlay').style.display = 'none';
+    document.getElementById('couponPopup').style.display = 'none';
+}
+
+// Optional: Close when clicking outside popup
+document.getElementById('popupOverlay').addEventListener('click', closeCouponPopup);
+</script>
+</body>
+</html>

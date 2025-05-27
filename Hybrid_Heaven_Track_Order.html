@@ -1,0 +1,539 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hybrid Heaven | Track Your Order</title>
+    <link rel="stylesheet" href="project_styles_main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="icon" href="project_images/logo-icon.png">
+    <link rel="stylesheet" href="home_page_offers.css">
+    <script src="search.js"></script>
+    <style>
+        /* Track Order Page Specific Styles */
+        .track-order-container {
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        
+        .track-header {
+            text-align: center;
+            margin-bottom: 30px;
+            color: #2e7d32;
+        }
+        
+        .track-form {
+            max-width: 600px;
+            margin: 0 auto 40px;
+            padding: 20px;
+            background-color: #f9f9f9;
+            border-radius: 8px;
+        }
+        
+        .form-group {
+            margin-bottom: 20px;
+        }
+        
+        .form-group label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: bold;
+        }
+        
+        .form-group input {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            font-size: 16px;
+        }
+        
+        .track-btn {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            padding: 12px 20px;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+            width: 100%;
+        }
+        
+        .track-btn:hover {
+            background-color: #45a049;
+        }
+        
+        .order-timeline {
+            max-width: 800px;
+            margin: 0 auto;
+            position: relative;
+            padding-left: 50px;
+        }
+        
+        .timeline-item {
+            position: relative;
+            padding-bottom: 30px;
+        }
+        
+        .timeline-item:last-child {
+            padding-bottom: 0;
+        }
+        
+        .timeline-item::before {
+            content: '';
+            position: absolute;
+            left: -30px;
+            top: 0;
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            background-color: #4CAF50;
+            z-index: 2;
+        }
+        
+        .timeline-item::after {
+            content: '';
+            position: absolute;
+            left: -21px;
+            top: 20px;
+            width: 2px;
+            height: 100%;
+            background-color: #ddd;
+        }
+        
+        .timeline-item:last-child::after {
+            display: none;
+        }
+        
+        .timeline-date {
+            font-weight: bold;
+            color: #2e7d32;
+            margin-bottom: 5px;
+        }
+        
+        .timeline-content {
+            background-color: #f9f9f9;
+            padding: 15px;
+            border-radius: 8px;
+            border-left: 3px solid #4CAF50;
+        }
+        
+        .timeline-status {
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+        
+        .timeline-location {
+            color: #666;
+            font-size: 14px;
+        }
+        
+        .order-details {
+            margin-top: 40px;
+            border-top: 1px solid #ddd;
+            padding-top: 20px;
+        }
+        
+        .order-summary {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            margin-top: 20px;
+        }
+        
+        .summary-card {
+            flex: 1;
+            min-width: 250px;
+            padding: 15px;
+            background-color: #f9f9f9;
+            border-radius: 8px;
+        }
+        
+        .summary-card h3 {
+            margin-top: 0;
+            color: #2e7d32;
+            border-bottom: 1px solid #ddd;
+            padding-bottom: 10px;
+        }
+        
+        .not-found {
+            text-align: center;
+            padding: 40px;
+        }
+        
+        .not-found img {
+            width: 150px;
+            margin-bottom: 20px;
+        }
+        
+        @media (max-width: 768px) {
+            .order-timeline {
+                padding-left: 30px;
+            }
+            
+            .timeline-item::before {
+                left: -20px;
+                width: 15px;
+                height: 15px;
+            }
+            
+            .timeline-item::after {
+                left: -13px;
+            }
+        }
+    </style>
+</head>
+<body class="body">
+    <div class="whatsapp-label-container" id="whatsapp-label">
+        <span>Chat with us</span>
+        <button onclick="document.getElementById('whatsapp-label').style.display='none'">✕</button>
+      </div>
+      
+      <a href="https://wa.me/919505736713" class="whatsapp-float" target="_blank" title="Chat with us on WhatsApp">
+        <img src="https://img.icons8.com/color/60/000000/whatsapp--v1.png" alt="WhatsApp Chat">
+      </a>
+    <section class="grid">
+        <div>
+            <a href="Hybrid_Heaven.html"><img class="logo" alt="logo" src="project_images/logo.png" height="80px" width="120px"></a>
+        </div>
+        <div>
+            <nav class="navbar" id="navbar">
+                <ul class="nav-links">
+                    <li><a href="Hybrid_Heaven_Home.html">Home</a></li>
+                    <li><a href="Hybrid_Heaven_Plants.html">Plants</a></li>
+                    <li><a href="Hybrid_Heaven_Orders.html">Orders</a></li>
+                    <li><a href="Hybrid_Heaven.html">About</a></li>
+                    <li><a href="Hybrid_Heaven_Contact.html">Contact</a></li>
+                    <li><a href="Hybrid_Heaven_Feedback.html">Feedback</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="search-container">
+            <form style="display: flex; align-items: center;" action="search_table_values.php" method="post">
+              <input type="text" id="search-bar" name="search_name" placeholder="Search something you want" style="flex: 1; padding: 15px;">
+              <button id="search-btn" type="submit" style="padding: 15px 12px;">🔍</button>
+            </form>
+        </div>
+        <div>
+            <a href="login.html" class="login-icon"><i class="fas fa-user"></i></a>
+            <a href="cart.html" class="cart-icon">🛒</a>
+        </div>
+    </section>
+    
+    <span class="sol"><marquee behavior="alternate" direction="left" scrollamount="12" style="color: green; font-size: 18px; font-weight: bold;"><img src="project_images/logo-icon.png" height="30px" width="30px"> &nbsp;FLASH SALE! Get <span style="color:rgb(196, 92, 7);">20% OFF </span>on all plants! Use code: <span style="color:rgb(196, 92, 7);">GREEN20</span> at checkout. Hurry, limited time only! 🏃‍♂️</marquee></span>
+    
+    <div class="track-order-container">
+        <h1 class="track-header">Track Your Order</h1>
+        
+        <div class="track-form">
+            <div class="form-group">
+                <label for="order-id">Order ID</label>
+                <input type="text" id="order-id" placeholder="Enter your order number (e.g. HH123456)">
+            </div>
+            <div class="form-group">
+                <label for="email">Email Address</label>
+                <input type="email" id="email" placeholder="Enter the email used for this order">
+            </div>
+            <button class="track-btn" id="track-btn">Track Order</button>
+        </div>
+        
+        <div id="tracking-results">
+            <!-- Tracking information will be dynamically inserted here -->
+        </div>
+    </div>
+    
+    <div style="background-color:white;"><br>
+        <section class="aboutus">
+            <div style="text-align:center;">
+                <h2 style="text-align:center;"><b>Useful Links</b></h2><br>
+                    <a href="Hybrid_Heaven_Track_Order.html">Track Order</a><br>
+                    <a href="Hybrid_Heaven_Orders.html">Orders</a><br>
+                    <a href="Hybrid_Heaven_Faqs.html">FAQ's</a><br>
+                    <a href="Hybrid_Heaven_Offers.html">Offers</a><br>
+                    <a href="Hybrid_Heaven_Rewards.html">Rewards</a><br>
+                    <a href="Hybrid_Heaven_Affiliate.html">Affiliate</a><br>
+            </div>
+            <div style="text-align:center;">
+                <h2 style="text-align:center;"><b>About</b></h2><br>
+                    <a href="Hybrid_Heaven.html">About Hybrid Heaven</a><br>
+                    <a href="Hybrid_Heaven_Privacy_Policy.html">Privacy Policy</a><br>
+                    <a href="Hybrid_Heaven_Refund_Policy.html">Refund Policy</a><br>
+                    <a href="Hybrid_Heaven_Shipping_Policy.html">Shipping Policy</a><br>
+                    <a href="Hybrid_Heaven_Terms_Of_Service.html">Terms of Service</a><br>
+                    <a href="Hybrid_Heaven_Jobs.html">Jobs</a><br>
+            </div>
+            <div style="text-align:center;">
+                <h2 style="text-align:center;"><b>Follow Us</b></h2><br>
+                    <a href="https://x.com/HybridHeavenOff?t=PNUJ0olnoD7j8Kqmx85_GQ&s=09" target="_blank"><img src="project_images/twittericon.png" width="40px" height="37px" style="border-radius:30px;"></a>
+                    <a href="https://www.instagram.com/hybridheavenofficial/?utm_source=ig_web_button_share_sheet" target="_blank"><img src="project_images/instaicon.png" width="35px" height="33px" style="border-radius:30px;"></a>
+                    <a href="https://www.youtube.com/channel/UCyuXTJPqFJkzAVaPV4Wy-dw" target="_blank"><img src="project_images/yticon.png" width="35px" height="33px" style="border-radius:30px;"></a>
+                    <a href="https://www.facebook.com/profile.php?id=61575038390477"target="_blank"><img src="project_images/fbicon2.png" width="35px" height="33px" style="border-radius:30px;"></a>
+                    <a href="https://www.linkedin.com/in/hybrid-heaven-877483359/" target="_blank"><img src="project_images/linkdinicon.png" width="40px" height="37px" style="border-radius:30px;"></a>
+            </div>
+            <div>
+                <h2>Get in Touch</h2><br>
+                <a href="#">Call: +91 9505736713</a><br>
+                <a href="https://wa.me/919505736713">WhatsApp:   +91 9505736713</a><br>
+                <a href="https://wa.me/919505736713" target="_blank">For Bulk Orders (WhatsApp):<br>+91 9505736713</a><br>
+                Email:<br><a href="mailto:hybridheavenofficial25@gmail.com" target="_blank">hybridheavenofficial25@gmail.com</a>
+                <p>Address:<br> 3-81/1, Near Panchayati, Chinakakani, Mangalagiri, Guntur, Andhra Pradesh. India-522503</p>
+            </div>
+            <div class="signup" style="text-align:center;">
+                <h2><b>Subscribe</b></h2><br>
+                <p>Join us to recieve gardening tips,offers,news & more..</p>
+                <form action="subscribe_table_values.php" method="post">
+                <input type="email" id="email" placeholder="Enter email address" id="subss" name="subscribeemail" style="padding:10px;width:280px;" required>
+                <span id="emailError" class="error"></span><br><hr>
+                <button style="padding:5px;color:rgba(32, 27, 23, 0.904);background-color:#93d88ec9" id="subss" onclick="Subscribe()"><b>Sign up</b></button>
+                </form>
+            </div>
+        </section>
+        <footer align="center" style="color:#3d3c3c;background-color:rgb(150, 150, 153);padding:3px;">
+            <p><h6>&copy; 2025 <a href="Hybrid_Heaven.html" style="text-decoration:none;color:#3d3c3c;">Hybrid Heaven</a> | All Rights Reserved</h6></p>
+        </footer>
+    </div>
+
+    <button onclick="scrollToTop()" id="goTopBtn" title="Go to top">↑TOP</button>
+
+    <script>
+        // Function to render tracking information
+        function renderTrackingInfo(order) {
+            const trackingResults = document.getElementById('tracking-results');
+            
+            if (!order) {
+                trackingResults.innerHTML = `
+                    <div class="not-found">
+                        <img src="project_images/order-not-found.png" alt="Order Not Found">
+                        <h2>Order Not Found</h2>
+                        <p>We couldn't find an order with the provided details. Please check your order ID and email address.</p>
+                        <p>Need help? <a href="Hybrid_Heaven_Contact.html">Contact our support team</a></p>
+                    </div>
+                `;
+                return;
+            }
+            
+            // Determine current status index for timeline
+            const statusStages = [
+                'Order Placed',
+                'Processing',
+                'Shipped',
+                'Out for Delivery',
+                'Delivered'
+            ];
+            
+            let currentStageIndex = statusStages.indexOf(order.status);
+            if (currentStageIndex === -1 && order.status === 'Cancelled') {
+                currentStageIndex = 1; // Show cancelled after processing
+            }
+            
+            // Generate timeline items
+            let timelineHtml = '';
+            const timelineEvents = [
+                {
+                    date: new Date(order.date),
+                    status: 'Order Placed',
+                    location: 'Hybrid Heaven, Guntur',
+                    description: 'Your order has been received and is being processed.'
+                },
+                {
+                    date: new Date(new Date(order.date).getTime() + 3600000),
+                    status: 'Processing',
+                    location: 'Hybrid Heaven, Guntur',
+                    description: 'We\'re preparing your plants for shipment.'
+                }
+            ];
+            
+            if (order.status !== 'Cancelled') {
+                timelineEvents.push(
+                    {
+                        date: new Date(new Date(order.date).getTime() + 86400000),
+                        status: 'Shipped',
+                        location: 'Hybrid Heaven, Guntur',
+                        description: 'Your order has been shipped.'
+                    },
+                    {
+                        date: new Date(new Date(order.date).getTime() + 172800000),
+                        status: 'Out for Delivery',
+                        location: order.shippingCity || 'Your City',
+                        description: 'Your order is with the delivery partner.'
+                    },
+                    {
+                        date: new Date(new Date(order.date).getTime() + 259200000),
+                        status: 'Delivered',
+                        location: order.shippingCity || 'Your City',
+                        description: 'Your order has been delivered.'
+                    }
+                );
+            } else {
+                timelineEvents.push(
+                    {
+                        date: new Date(new Date(order.date).getTime() + 86400000),
+                        status: 'Cancelled',
+                        location: 'Hybrid Heaven, Guntur',
+                        description: 'Your order has been cancelled as per your request.'
+                    }
+                );
+            }
+            
+            timelineEvents.forEach((event, index) => {
+                const isActive = index <= currentStageIndex;
+                const isCancelled = order.status === 'Cancelled' && index === timelineEvents.length - 1;
+                
+                if (index <= currentStageIndex || isCancelled) {
+                    timelineHtml += `
+                        <div class="timeline-item">
+                            <div class="timeline-date">${event.date.toLocaleDateString()} • ${event.date.toLocaleTimeString([], {hour: '2-digit', minute:'2-digit'})}</div>
+                            <div class="timeline-content">
+                                <div class="timeline-status">${event.status}</div>
+                                <div>${event.description}</div>
+                                <div class="timeline-location">${event.location}</div>
+                            </div>
+                        </div>
+                    `;
+                }
+            });
+            
+            // Generate order summary
+            let itemsHtml = '';
+            let total = 0;
+            
+            order.items.forEach(item => {
+                const itemTotal = item.price * item.quantity;
+                total += itemTotal;
+                
+                itemsHtml += `
+                    <tr>
+                        <td>${item.name}</td>
+                        <td>₹${item.price.toFixed(2)}</td>
+                        <td>${item.quantity}</td>
+                        <td>₹${itemTotal.toFixed(2)}</td>
+                    </tr>
+                `;
+            });
+            
+            const shippingCost = total > 1000 ? 0 : 50;
+            const grandTotal = total + shippingCost;
+            
+            trackingResults.innerHTML = `
+                <div class="order-timeline">
+                    ${timelineHtml}
+                </div>
+                
+                <div class="order-details">
+                    <h2>Order Details</h2>
+                    
+                    <div class="order-summary">
+                        <div class="summary-card">
+                            <h3>Items Summary</h3>
+                            <table style="width:100%;">
+                                <thead>
+                                    <tr>
+                                        <th style="text-align:left;">Item</th>
+                                        <th style="text-align:right;">Price</th>
+                                        <th style="text-align:center;">Qty</th>
+                                        <th style="text-align:right;">Total</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    ${itemsHtml}
+                                    <tr>
+                                        <td colspan="3" style="text-align:right;border-top:1px solid #ddd;">Subtotal:</td>
+                                        <td style="text-align:right;border-top:1px solid #ddd;">₹${total.toFixed(2)}</td>
+                                    </tr>
+                                    <tr>
+                                        <td colspan="3" style="text-align:right;">Shipping:</td>
+                                        <td style="text-align:right;">₹${shippingCost.toFixed(2)}</td>
+                                    </tr>
+                                    <tr>
+                                        <td colspan="3" style="text-align:right;font-weight:bold;">Total:</td>
+                                        <td style="text-align:right;font-weight:bold;">₹${grandTotal.toFixed(2)}</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        
+                        <div class="summary-card">
+                            <h3>Shipping Information</h3>
+                            <p><strong>Name:</strong> ${order.shippingName || 'Customer Name'}</p>
+                            <p><strong>Address:</strong> ${order.shippingAddress || '3-81/1, Near Panchayati, Chinakakani, Mangalagiri, Guntur, Andhra Pradesh. India-522503'}</p>
+                            <p><strong>Phone:</strong> ${order.shippingPhone || '+91 9505736713'}</p>
+                            <p><strong>Email:</strong> ${order.email || 'customer@example.com'}</p>
+                        </div>
+                        
+                        <div class="summary-card">
+                            <h3>Payment Information</h3>
+                            <p><strong>Method:</strong> ${order.paymentMethod}</p>
+                            <p><strong>Status:</strong> ${order.paymentStatus || 'Paid'}</p>
+                            <p><strong>Order ID:</strong> ${order.id}</p>
+                            <p><strong>Date:</strong> ${new Date(order.date).toLocaleDateString()}</p>
+                        </div>
+                    </div>
+                </div>
+            `;
+        }
+        
+        // Function to find order by ID and email
+        function findOrder(orderId, email) {
+            const orders = JSON.parse(localStorage.getItem('orders')) || [];
+            
+            // In a real application, this would be a server request with proper validation
+            return orders.find(order => 
+                order.id === orderId && 
+                (order.email === email || email === '') // Simple validation for demo
+            );
+        }
+        
+        // Initialize when page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            // Check for order ID in URL parameters
+            const urlParams = new URLSearchParams(window.location.search);
+            const orderId = urlParams.get('orderId');
+            
+            if (orderId) {
+                document.getElementById('order-id').value = orderId;
+                
+                // For demo purposes, auto-find the order if ID is in URL
+                const order = findOrder(orderId, '');
+                renderTrackingInfo(order);
+            }
+            
+            // Set up track button click handler
+            document.getElementById('track-btn').addEventListener('click', function() {
+                const orderId = document.getElementById('order-id').value.trim();
+                const email = document.getElementById('email').value.trim();
+                
+                if (!orderId) {
+                    alert('Please enter your order ID');
+                    return;
+                }
+                
+                // Find the order (in a real app, this would be a server request)
+                const order = findOrder(orderId, email);
+                renderTrackingInfo(order);
+                
+                // Scroll to results
+                document.getElementById('tracking-results').scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+        
+        // Function to scroll to top
+        function scrollToTop() {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        }
+    </script>
+    <script>
+        function Subscribe(){
+          alert("We will contact you soon");
+        }
+      </script>
+</body>
+</html>

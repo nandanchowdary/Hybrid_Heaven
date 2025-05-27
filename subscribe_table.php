@@ -1,0 +1,21 @@
+<?php
+$dbhost = 'localhost';
+$dbuser = 'root';
+$dbpass = '';
+$dbname = "hybrid_heaven_contact";
+$conn = mysqli_connect($dbhost, $dbuser, $dbpass,$dbname);
+if (!$conn) {
+die("Connection failed: " . mysqli_connect_error());
+}
+$sql = "CREATE TABLE subscribe_table (
+id INT(6) UNSIGNED AUTO_INCREMENT PRIMARY KEY,
+subscribed_email VARCHAR(90) NOT NULL
+)";
+if ($conn->query($sql) === TRUE) {
+echo "Table Subscribe created successfully";
+}
+else {
+echo "Error creating table: " . mysqli_error($conn);
+}
+mysqli_close($conn);
+?>

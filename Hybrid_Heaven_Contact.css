@@ -1,0 +1,120 @@
+.nursery-contact {
+    background-size: cover;
+    background-position: center;
+    padding: 0;
+    color: #fff;
+  }
+
+  .overlay {
+    padding: 60px 30px;
+  }
+
+  .overlay h2 {
+    text-align: center;
+    font-size: 2.8rem;
+    margin-bottom: 40px;
+  }
+
+  .overlay h2 span {
+    color: #c23b12;
+  }
+
+  .contact-box {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 60px;
+    margin-left:50px;
+    margin-right:30px;
+    justify-content: center;
+  }
+
+  .contact-form,
+  .contact-info {
+    flex: 1 1 350px;
+    padding: 30px;
+    background-color: rgba(255, 255, 255, 0.95);
+    border-radius: 12px;
+    color: #1b4332;
+  }
+
+  .form-group {
+    position: relative;
+    margin-bottom: 25px;
+  }
+
+  .form-group input,
+  .form-group textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background: transparent;
+    outline: none;
+    font-size: 1rem;
+    color: #1b4332;
+  }
+
+  .form-group label {
+    position: absolute;
+    left: 14px;
+    top: 14px;
+    background: white;
+    padding: 0 6px;
+    color: #6c757d;
+    transition: 0.3s;
+    pointer-events: none;
+  }
+
+  .form-group input:focus + label,
+  .form-group input:not(:placeholder-shown) + label,
+  .form-group textarea:focus + label,
+  .form-group textarea:not(:placeholder-shown) + label {
+    top: -10px;
+    font-size: 0.8rem;
+    color: #2d6a4f;
+  }
+
+  .contact-form button {
+    width: 100%;
+    padding: 12px;
+    background: #52b788;
+    border: none;
+    color: white;
+    font-size: 18px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+
+  .contact-form button:hover {
+    background: #40916c;
+  }
+
+  .feedback-msg {
+    margin-top: 5px;
+    text-align: center;
+    font-weight: 500;
+  }
+
+  .contact-info h3 {
+    margin-top: 20px;
+    color: #1b4332;
+  }
+
+  .contact-info iframe {
+    margin-top: 10px;
+    border-radius: 8px;
+  }
+
+  @media (max-width: 768px) {
+    .contact-box {
+      flex-direction: column;
+    }
+  }
+  .cccc{
+    background: linear-gradient(rgba(2, 12, 12, 0.8), rgba(8, 4, 2, 0.5)), url('project_images/contactbackground1.jpeg');
+    background-size: cover;
+    background-position: center;
+    align-items: center;
+    background-size:10cm;
+  }

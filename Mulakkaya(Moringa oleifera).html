@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plants_Mulakkaya(Moringa oleifera)</title>
+    <link rel="stylesheet" href="project_styles_main.css">
+    <script src="project_script_main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="icon"  href="project_images/logo-icon.png">
+    <link rel="stylesheet"  href="home_page_offers.css">
+    <link rel="stylesheet" href="plantinfo.css">
+    <script src="plantinfo.js"></script>
+    <script src="search.js"></script>
+    <style>
+        .notification {
+            display: none;
+            position: fixed;
+            top: 520px;
+            bottom:5px;
+            background-color: #4CAF50;
+            color: white;
+            padding: 25px;
+            border-radius: 5px;
+            animation: fadeIn 0.5s, fadeOut 0.5s 2.5s;
+        }
+        
+        @keyframes fadeIn {
+            from {opacity: 0;}
+            to {opacity: 1;}
+        }
+        
+        @keyframes fadeOut {
+            from {opacity: 1;}
+            to {opacity: 0;}
+        }
+        .cart-count {
+            background-color: #ff5722;
+            color: white;
+            border-radius: 50%;
+            padding: 2px 6px;
+            font-size: 12px;
+            position: relative;
+            top: -10px;
+            right: 5px;
+        }
+    </style>
+</head>
+<div class="whatsapp-label-container" id="whatsapp-label">
+    <span>Chat with us</span>
+    <button onclick="document.getElementById('whatsapp-label').style.display='none'">✕</button>
+  </div>
+  
+  <a href="https://wa.me/919505736713" class="whatsapp-float" target="_blank" title="Chat with us on WhatsApp">
+    <img src="https://img.icons8.com/color/60/000000/whatsapp--v1.png" alt="WhatsApp Chat">
+  </a>
+<body class="body">
+    <section class="grid">
+        <div>
+            <a href="Hybrid_Heaven.html"><img class="logo"alt="logo" src="project_images/logo.png" height="80px" width="120px"></a>
+        </div>
+        <div>
+            <nav class="navbar" id="navbar">
+                <ul class="nav-links">
+                    <li><a href="Hybrid_Heaven_Home.html">Home</a></li>
+                    <li><a href="Hybrid_Heaven_Plants.html">Plants</a></li>
+                    <li><a href="Hybrid_Heaven_Orders.html">Ordes</a></li>
+                    <li><a href="Hybrid_Heaven.html">About Us</a></li>
+                    <li><a href="Hybrid_Heaven_Contact.html">Contact</a></li>
+                    <li><a href="Hybrid_Heaven_Feedback.html">Feedback</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="search-container">
+            <form style="display: flex; align-items: center;" action="search_table_values.php" method="post">
+              <input type="text" id="search-bar" name="search_name" placeholder="Search something you want" style="flex: 1; padding: 15px;">
+              <button id="search-btn" type="submit" style="padding: 15px 12px;">🔍</button>
+            </form>
+        </div>
+        <div>
+        <a href="login.html" class="login-icon"><i class="fas fa-user"></i></a>
+        <a href="cart.html" class="cart-icon">🛒</a>
+        </div>
+    </section>
+    <span class="sol"><marquee behavior="alternate" direction="left" scrollamount="12" style="color: green; font-size: 18px; font-weight: bold;"><img src="project_images/logo-icon.png" height="30px" width="30px" > &nbsp;FLASH SALE! Get <span style="color:rgb(196, 92, 7);">20% OFF </span>on all plants! Use code: <span style="color:rgb(196, 92, 7);">GREEN20</span> at checkout. Hurry, limited time only! 🏃‍♂️</marquee></span>
+    <p style="margin-top:10px;"></p>
+
+ <pre style="font-family:Cambria;font-weight:bold;">
+         <a style="color:rgb(189, 90, 24);font-size:24px;text-decoration:none;" href="Hybrid_Heaven_Home.html">Home</a>   >  <a style="color:green;font-size:19px;text-decoration:none;" href="Hybrid_Heaven_Plants.html">Plants</a>  >  Mulakkaya(Moringa oleifera)</pre>
+
+    <section class="plantinfo">
+<div><img src="project_images/Mulakkaya(Moringa oleifera).jpg" alt="Sapota image" height="600px" width="100%">
+<div style="padding:10px;"><br>
+    <p style="color:rgb(80, 80, 79);font-size:28px;font-weight:bold;">Product Includes</p>
+    <table>
+        <thead>
+          <tr>
+            <th>S.no</th>
+            <th>Item</th>
+            <th>Type</th>
+            <th>Description</th>
+            <th>Qty</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>1</td>
+            <td>Mulakkaya</td>
+            <td>Moringa oleifera-(Grafted)</td>
+            <td>Mulakkaya (Moringa oleifera) is a fast-growing, nutrient-rich plant known for its edible drumsticks and highly medicinal leaves used in traditional remedies.
+            </td>
+            <td>1</td>
+          </tr>
+          <tr>
+            <td>2</td>
+            <td>Plant Bag</td>
+            <td>Plastic</td>
+            <td>Not an extra bag,this bag comes with plant</td>
+            <td>1</td>
+          </tr>
+        </tbody>
+      </table>
+</div>
+</div>
+<div><h3 style="font-family:Browallia New;font-weight:550;">Mulakkaya(Moringa oleifera)-Grafted Plant</h3>
+    ⭐⭐⭐⭐★<br><span>⚡ 100+ Sold in 30 days</span><br>
+    <span class="savepercent">Save 27% </span><span class="span3" style="font-size:28px;">₹219 &nbsp;<span style="color:rgba(236, 109, 25, 0.747);text-decoration:line-through;font-size:18px;">₹299</span></span>
+    <br>(MRP Inclusive of all taxes)<br><br>
+    <ul>
+        <li>Dispatch in 7 days</li>
+        <li>Country of origin: India</li>
+    </ul>
+    <label for="product-quantity"></label>
+<select class="quantityselector" id="product-quantity" name="quantity" required>
+  <option value="" disabled selected>Quantity</option>
+  <option value="1">1</option>
+  <option value="2">2</option>
+  <option value="3">3</option>
+  <option value="4">4</option>
+  <option value="5">5</option>
+  <option value="5">6</option>
+  <option value="5">7</option>
+  <option value="5">8</option>
+  <option value="5">9</option>
+  <option value="5">10</option>
+
+</select>&nbsp;&nbsp;&nbsp;
+<button class="add-to-cart-btn" onclick="addToCart()" >Add to Cart</button>
+<div id="cart-notification" class="notification">
+    ✅ Item successfully added to cart!
+  </div><br><br>
+<div class="todayoffer"><pre>
+
+    <span style="font-weight:bold;font-size:26px;">Today's Offer</span>
+
+    ⚡<span style="font-weight:bold;font-size:16px;">Get ₹249 Guava Plant Free</span>
+    *On a bulk order of more than 20 plants
+
+    ⚡<span style="font-weight:bold;font-size:16px;">Get Organic Fruits pack</span>
+    *On a spot visit purchase
+
+    ⚡<span style="font-weight:bold;font-size:16px;">Get Pack of  Free</span>
+    *On all orders
+
+    ⚡<span style="font-weight:bold;font-size:16px;">Earn 100 HHCOINS</span>
+    *On all orders placed today
+
+</pre><br>
+* check details on cart page<br>
+Images are for reference purposes only. Actual product may vary in shape or appearance based on climate, age, height, etc. The product is replaceable but not returnable.<br><br><br>
+<br><a href="Hybrid_Heaven_Plants.html"><span class="exploremore">Explore More</span></a>
+</div>
+
+    </section><br>
+
+    <button onclick="scrollToTop()" id="goTopBtn" title="Go to top">↑TOP</button>
+    <br>
+    <div class="tabs">
+        <button class="tab active" onclick="showSection(0)">Description</button>
+        <button class="tab" onclick="showSection(1)">Care & Features</button>
+        <button class="tab" onclick="showSection(2)">Uses</button>
+        <button class="tab" onclick="showSection(3)">Environment</button>
+        <button class="tab" onclick="showSection(4)">Related</button>
+      </div>
+    
+      <div class="section active">
+        <section class="plantdata">
+            <h2>Mulakkaya (Moringa oleifera, Grafted) – Plant</h2>
+            <p>Mulakkaya, or Moringa oleifera, is a fast-growing, highly nutritious plant cherished for its edible pods and medicinal leaves. The grafted variety ensures quicker harvests, improved disease resistance, and uniform quality, making it ideal for home gardens and kitchen use.</p>
+            <h2>Why It's Special</h2>
+            <p>Moringa is known as the "Miracle Tree" due to its exceptional nutritional value and healing properties. The grafted version enhances growth rate, yield consistency, and resilience, making it perfect for both culinary and health-conscious growers.</p>
+            <h2>Grafted Moringa Plants</h2>
+            <p>Grafting combines a strong rootstock with a superior scion, promoting faster growth, earlier pod production, and resistance to environmental stress. The result is a hardy plant with reliable harvests and better overall performance.
+
+
+
+            </p>
+            
+    
+        </section>
+      </div>
+      <div class="section"><section class="plantdata">
+        <h2>Special Features</h2>
+
+        <p>
+            <ul>
+                  <li>Early fruiting (within 6–8 months in ideal conditions)</li>
+        
+                  <li>Fast-growing, drought-tolerant, and low-maintenance
+
+                  </li>
+        
+                  <li>Nutrient-rich pods and leaves packed with vitamins and minerals</li>
+
+
+            </ul>
+        
+        </p>
+        <h2>Growing Instructions</h2>
+        <p>Plant in a sunny spot with well-drained soil. Dig a deep pit, mix with compost or organic manure, and plant at the graft union level. Water thoroughly after planting and keep the soil slightly moist during establishment.
+
+
+
+        </p>
+        <h2>Care Instructions</h2>
+        <p>Water once or twice a week depending on the season. Prune to encourage bushier growth and higher yield. Fertilize with compost or balanced organic fertilizer during the growing season. Protect young plants from strong winds and pests using neem-based sprays.
+
+        </p>
+      </section></div>
+      <div class="section"><section class="plantdata"><h2>Uses</h2>
+        
+        <p>Moringa pods (drumsticks) are used in curries, dals, soups, and pickles. The leaves are rich in iron, calcium, and protein—consumed as powder, tea, or fresh greens. Known to support immunity, digestion, and energy. The plant also has antifungal, antibacterial, and anti-inflammatory properties.
+
+
+
+        </p>
+        </section></div>
+      <div class="section"><section class="plantdata">
+        <h2>Environmental Impact</h2>
+        <p>Moringa trees improve soil fertility, prevent erosion, and contribute to air purification. Their deep roots stabilize the land, and their foliage supports biodiversity by attracting birds and beneficial insects. A sustainable and climate-resilient addition to any landscape.
+
+        </p>
+        <h2>Soil Requirements</h2>
+        <p>Thrives in well-drained, sandy or loamy soils with a pH of 6.0–7.5. Avoid waterlogged or heavy clay soils. Enrich the planting site with compost or rotted manure to promote healthy root development and vigorous growth.
+
+        </p>
+      </section></div>
+      <div class="section"><div class="related">
+        <h2>
+            RELATED PRODUCTS
+        </h2>
+
+        <div class="relatedgrid">
+            
+            <p>No related Plants are available for this plant in our store. </p>
+        </div>
+    </div></div><br><br><br>
+    <div class="related">
+        <h2>
+            RELATED PRODUCTS
+        </h2>
+
+        <div class="relatedgrid">
+            
+            <p>No related Plants are available for this plant in our store. </p>
+
+        </div>
+    </div><br>
+    <div class="newarr">
+        <h2>
+            NEW ARRIVALS
+        </h2>
+
+        <div class="newarrgrid">
+            
+            <div>
+                <a href="Mango(Banganapalle)-Grafted.html" class="abc"><img class="a1" src="project_images/Mango(Banganapalle)-Grafted.jpg" alt="weekly-1" width="292px" height="280px" ><br>
+                <p class="span1">Mango(Banganapalle)-Grafted</p></a>
+                <span class="span2"><img src="project_images/star1_icon.jpg" alt="4.5 star rating" width="120px" height="25px"></span><br>
+                <p class="span3">₹299 &nbsp;&nbsp;&nbsp;<span style="color:rgba(236, 109, 25, 0.747);text-decoration:line-through">₹699</span></p>
+            </div>
+
+            <div>
+                <a href="Mango(Rasam)-Grafted.html" class="abc"><img class="a1" src="project_images/Mango(Rasam)-Grafted(V).jpg" alt="weekly-1" width="292px" height="280px" ><br>
+                <p class="span1">Mango(Rasam)-Grafted</p></a>
+                <span class="span2"><img src="project_images/star1_icon.jpg" alt="4.5 star rating" width="120px" height="25px"></span><br>
+                <p class="span3">₹339 &nbsp;&nbsp;&nbsp;<span style="color:rgba(236, 109, 25, 0.747);text-decoration:line-through">₹799</span></p>
+            </div>
+
+            <div>
+                <a href="Nuru_Varahalu_Pink(Cainiksara).html" class="abc"><img class="a1" src="project_images/Nuru_Varahalu_Pink(Cainiksara)(V).jpg" alt="weekly-1" width="292px" height="280px" ><br>
+                <p class="span1">Nuru Varahalu Pink (Cainiksara)</p></a>
+                <span class="span2"><img src="project_images/star1_icon.jpg" alt="4.5 star rating" width="120px" height="25px"></span><br>
+                <p class="span3">₹199 &nbsp;&nbsp;&nbsp;<span style="color:rgba(236, 109, 25, 0.747);text-decoration:line-through">₹249</span></p>
+            </div>
+            
+            <div>
+                <a href="Ranapala(Bryophyllum).html" class="abc"><img class="a1" src="project_images/Ranapala(Bryophyllum)(V).jpg" alt="weekly-1" width="292px" height="280px" ><br>
+                <p class="span1">Ranapala(Bryophyllum)</p></a>
+                <span class="span2"><img src="project_images/star1_icon.jpg" alt="4.5 star rating" width="120px" height="25px"></span><br>
+                <p class="span3">₹99 &nbsp;&nbsp;&nbsp;<span style="color:rgba(236, 109, 25, 0.747);text-decoration:line-through">₹199</span></p>
+            </div>
+            
+        </div>
+    </div>
+
+    <h4 style="text-align:center;font-size:28px;">You may also need</h4><br><br>
+    <div class="mayalsoneed">
+        <div class="mayalsoneed-card"><a href="Hybrid_Heaven_Seeds.html"><img src="project_images/seedsicon.jpeg" alt="Seeds Image"></a></div>
+        <div class="mayalsoneed-card"><a href="Hybrid_Heaven_Fertilizers.html"><img src="project_images/soilicon.jpeg" height="270px" width=300px alt="Soil Image"></a></div>
+        <div class="mayalsoneed-card"><a href="Hybrid_Heaven_Pots.html"><img src="project_images/potsicon.jpeg" height="270px" width=300px alt=" Image"></a></div>    
+        <div class="mayalsoneed-card"><a href="Hybrid_Heaven_Accessories.html"><img src="project_images/accessoriesicon.jpeg" height="270px" width=300px alt="Tools Image"></a></div>
+    </div><br><br>
+    <h2 style="text-align:center;color:rgba(0, 128, 0, 0.822);font-family:Verdana;"><b>What Our Customers Say</b><br><br>
+    </h2>
+    <div id="customerCarousel" class="carousel slide">  
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <div class="row">
+                    <div class="col-md-4 testimonial">
+                        <img src="project_images/customer1.jpg" alt="Customer 1">
+                        <p>"Amazing plants! Highly recommended!" - ⭐⭐⭐⭐</p>
+                        <h5>- Nithin Raj</h5>
+                    </div>
+                    <div class="col-md-4 testimonial">
+                        <img src="project_images/customer2.jpg" alt="Customer 2">
+                        <p>"Very healthy plants and fast delivery!" - ⭐⭐⭐⭐⭐</p>
+                        <h5>- Jaji Koneru</h5>
+                    </div>
+                    <div class="col-md-4 testimonial">
+                        <img src="project_images/customer3.jpg" alt="Customer 3">
+                        <p>"Excellent customer service and great selection!" - ⭐⭐⭐⭐</p>
+                        <h5>- Pranathi Lanka</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="row">
+                    <div class="col-md-4 testimonial">
+                        <img src="project_images/customer4.jpg" alt="Customer 4">
+                        <p>"Beautiful collection of plants!" - ⭐⭐⭐⭐⭐</p>
+                        <h5>- Anushka Krapa</h5>
+                    </div>
+                    <div class="col-md-4 testimonial">
+                        <img src="project_images/customer5.jpg" alt="Customer 5">
+                        <p>"Love the unique pots and planters!" - ⭐⭐⭐⭐</p>
+                        <h5>- Ritheesh Vemuri</h5>
+                    </div>
+                    <div class="col-md-4 testimonial">
+                        <img src="project_images/customer6.jpg" alt="Customer 6">
+                        <p>"Quick delivery and well-packaged plants!" - ⭐⭐⭐⭐⭐</p>
+                        <h5>- Baby Jammula</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#customerCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#customerCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon"></span>
+        </button>
+    </div>
+    <br><br>
+    <div id="abt"  style="background-color:rgba(179, 236, 238, 0.849);margin:30px;padding:40px;">
+        <h3 style="font-weight:bold;font-family:'Courier New', Courier, monospace;text-align:center;color:#2a8b24c5;">About Hybrid Heaven</h3>
+    <p style="text-align:center;margin:20px;font-size:20px;">Hybrid Heaven is more than just a plant nursery — it's a sanctuary for plant lovers and a celebration of nature's finest creations. Founded with a deep passion for greenery and sustainable living, Hybrid Heaven offers a unique collection of rare, hybrid, and exotic plants carefully nurtured to thrive in diverse environments.<p style="text-align:center;margin:20px;font-size:20px;"> Our mission is to bring nature closer to homes and hearts by making plant care easy, enjoyable, and deeply rewarding. Whether you're looking to start your plant journey or expand your green space, Hybrid Heaven is your trusted destination for quality plants, expert guidance, and a peaceful, eco-conscious experience.</p> <p style="text-align:center;margin:20px;font-size:20px;">Every plant here is grown with love, and every customer becomes part of our growing green family.</p></p>
+    </div>
+
+    <div style="background-color:white;"><br>
+        <section class="aboutus">
+            <div style="text-align:center;">
+                <h2 style="text-align:center;"><b>Useful Links</b></h2><br>
+                    <a href="Hybrid_Heaven_Track_Order.html">Track Order</a><br>
+                    <a href="Hybrid_Heaven_Orders.html">Orders</a><br>
+                    <a href="Hybrid_Heaven_FAQS.html">FAQ's</a><br>
+                    <a href="Hybrid_Heaven_Orders.html">Offers</a><br>
+                    <a href="Hybrid_Heaven_Rewards.html">Rewards</a><br>
+                    <a href="Hybrid_Heaven_Affiliate.html">Affiliate</a><br>
+            </div>
+            <div style="text-align:center;">
+                <h2 style="text-align:center;"><b>About</b></h2><br>
+                    <a href="Hybrid_heaven.html">About Hybrid Heaven</a><br>
+                    <a href="Hybrid_heaven_Privacy_Policy.html">Privacy Policy</a><br>
+                    <a href="Hybrid_heaven_Refund_Policy.html">Refund Policy</a><br>
+                    <a href="Hybrid_heaven_Shipping_Policy.html">Shipping Policy</a><br>
+                    <a href="Hybrid_Heaven)Terms_Of_Service.html">Terms of Service</a><br>
+                    <a href="Hybrid_Heaven_Jobs.html">Jobs</a><br>
+            </div>
+            <div style="text-align:center;">
+                <h2 style="text-align:center;"><b>Follow Us</b></h2><br>
+                    <a href="https://x.com/HybridHeavenOff?t=PNUJ0olnoD7j8Kqmx85_GQ&s=09" target="_blank"><img src="project_images/twittericon.png" width="40px" height="37px" style="border-radius:30px;"></a>
+                    <a href="https://www.instagram.com/hybridheavenofficial/?utm_source=ig_web_button_share_sheet" target="_blank"><img src="project_images/instaicon.png" width="35px" height="33px" style="border-radius:30px;"></a>
+                    <a href="https://www.youtube.com/channel/UCyuXTJPqFJkzAVaPV4Wy-dw" target="_blank"><img src="project_images/yticon.png" width="35px" height="33px" style="border-radius:30px;"></a>
+                    <a href="https://www.facebook.com/profile.php?id=61575038390477"target="_blank"><img src="project_images/fbicon2.png" width="35px" height="33px" style="border-radius:30px;"></a>
+                    <a href="https://www.linkedin.com/in/hybrid-heaven-877483359/" target="_blank"><img src="project_images/linkdinicon.png" width="40px" height="37px" style="border-radius:30px;"></a>
+            </div>
+            <div>
+                <h2>Get in Touch</h2><br>
+                <a href="#">Call: +91 9505736713</a><br>
+                <a href="https://wa.me/919505736713">WhatsApp:   +91 9505736713</a><br>
+                <a href="https://wa.me/919505736713" target="_blank">For Bulk Orders (WhatsApp):<br>+91 9505736713</a><br>
+                Email:<br><a href="mailto:hybridheavenofficial25@gmail.com" target="_blank">hybridheavenofficial25@gmail.com</a>
+                <p>Address:<br> 3-81/1, Near Panchayati, Chinakakani, Mangalagiri, Guntur, Andhra Pradesh. India-522503</p>
+            </div>
+            <div class="signup" style="text-align:center;">
+                <h2><b>Subscribe</b></h2><br>
+                <p>Join us to recieve gardening tips,offers,news & more..</p>
+                <form action="subscribe_table_values.php" method="post">
+                <input type="email" id="email" placeholder="Enter email address" id="subss" name="subscribeemail" style="padding:10px;width:280px;" required>
+                <span id="emailError" class="error"></span><br><hr>
+                <button style="padding:5px;color:rgba(32, 27, 23, 0.904);background-color:#93d88ec9" id="subss" onclick="Subscribe()"><b>Sign up</b></button>
+                </form>
+            </div>
+            
+        </section>
+        <footer align="center" style="color:#3d3c3c;background-color:rgb(150, 150, 153);padding:3px;">
+            <p><h6>&copy; 2025 Hybrid Heaven | All Rights Reserved</h6></p>
+        </footer></div>
+        <script>
+            function Subscribe(){
+              alert("We will contact you soon");
+            }
+    
+            function addToCart() {
+                // Get product details
+                const productName = "Mulakkaya(Moringa oleifera)";
+                const productPrice = 219;
+                const productImage = "project_images/Mulakkaya(Moringa oleifera).jpg";
+                const quantity = document.getElementById('product-quantity').value || 1;
+                
+                // Create product object
+                const product = {
+                    name: productName,
+                    price: productPrice,
+                    image: productImage,
+                    quantity: parseInt(quantity)
+                };
+                
+                // Get existing cart items from localStorage or create empty array
+                let cartItems = JSON.parse(localStorage.getItem('cartItems')) || [];
+                
+                // Check if product already exists in cart
+                const existingItemIndex = cartItems.findIndex(item => item.name === productName);
+                
+                if (existingItemIndex !== -1) {
+                    // Update quantity if product exists
+                    cartItems[existingItemIndex].quantity += parseInt(quantity);
+                } else {
+                    // Add new product to cart
+                    cartItems.push(product);
+                }
+                
+                // Save updated cart to localStorage
+                localStorage.setItem('cartItems', JSON.stringify(cartItems));
+                
+                // Show notification
+                const notification = document.getElementById('cart-notification');
+                notification.style.display = 'block';
+                
+                // Hide notification after 3 seconds
+                setTimeout(() => {
+                    notification.style.display = 'none';
+                }, 2000);
+                
+                // Update cart count in navbar
+                updateCartCount();
+            }
+            
+            // Function to update cart count in navbar
+            function updateCartCount() {
+                const cartItems = JSON.parse(localStorage.getItem('cartItems')) || [];
+                const totalItems = cartItems.reduce((total, item) => total + item.quantity, 0);
+                
+                // Update cart icon with count
+                const cartIcon = document.querySelector('.cart-icon');
+                if (totalItems > 0) {
+                    cartIcon.innerHTML = `🛒 <span class="cart-count">${totalItems}</span>`;
+                } else {
+                    cartIcon.textContent = '🛒';
+                }
+            }
+            
+            // Initialize cart count when page loads
+            document.addEventListener('DOMContentLoaded', function() {
+                updateCartCount();
+            });
+        </script>
+</body>
+</html>
